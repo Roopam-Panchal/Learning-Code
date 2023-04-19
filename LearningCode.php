@@ -1,5 +1,5 @@
-//Replace the default name of wordpress by the current admin and domain name 
-==============================================================================
+/*Replace the default name of wordpress by the current admin and domain name 
+============================================================================== */
 add_filter( 'wp_mail_from', 'wpse_new_mail_from' );     
 function wpse_new_mail_from( $original_email_from ) {
 	$email = get_option('admin_email');
